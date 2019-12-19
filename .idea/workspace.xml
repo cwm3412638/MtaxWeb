@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="" />
+    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +21,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\mtax-web\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1VBVLCL8lN7xYzfrYZFsVenCbWj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,6 +41,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -85,18 +97,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576726416718</updated>
-      <workItem from="1576726419662" duration="1897000" />
+      <workItem from="1576726419662" duration="2189000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化项目">
+      <created>1576728429975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576728429975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1059" y="258" key="FileChooserDialogImpl" timestamp="1576728386686">
+    <state x="871" y="176" key="#Deployment" timestamp="1576728423253">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1059" y="258" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1576728386686" />
+    <state x="871" y="176" key="#Deployment/0.0.2560.1040@0.0.2560.1040" timestamp="1576728423253" />
+    <state x="869" y="106" key="CommitChangelistDialog2" timestamp="1576728428402">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="869" y="106" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1576728428402" />
+    <state x="1059" y="258" key="FileChooserDialogImpl" timestamp="1576728661406">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1059" y="258" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1576728661406" />
     <state width="2515" height="347" key="GridCell.Tab.0.bottom" timestamp="1576727859370">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -129,5 +161,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="2515" height="195" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1576727677287" />
+    <state x="871" y="251" key="Vcs.Push.Dialog.v2" timestamp="1576728447186">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="871" y="251" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1576728447186" />
   </component>
 </project>
