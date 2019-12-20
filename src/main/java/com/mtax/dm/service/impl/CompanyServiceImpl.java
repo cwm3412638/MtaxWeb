@@ -1,22 +1,21 @@
 package com.mtax.dm.service.impl;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mtax.dm.common.result.JsonResult;
-import com.mtax.dm.entity.EnterpriseInfo;
-import com.mtax.dm.mapper.EnterpriseInfoMapper;
-import com.mtax.dm.service.EnterpriseInfoService;
+import com.mtax.dm.entity.Company;
+import com.mtax.dm.mapper.CompanyMapper;
+import com.mtax.dm.service.CompanyService;
 import com.mtax.dm.utils.IdUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class EnterpriseInfoServiceImpl extends ServiceImpl<EnterpriseInfoMapper, EnterpriseInfo> implements EnterpriseInfoService {
+public class CompanyServiceImpl extends ServiceImpl<CompanyMapper, Company> implements CompanyService {
     @Override
-    public JsonResult addEnterpriseInfo(EnterpriseInfo enterpriseInfo) {
-        enterpriseInfo.setId(IdUtils.getId());
-        int insert = baseMapper.insert(enterpriseInfo);
+    public JsonResult addCompany(Company company) {
+        company.setId(IdUtils.getId());
+        int insert = baseMapper.insert(company);
         if (insert==1){
             return new JsonResult(true);
         }else {

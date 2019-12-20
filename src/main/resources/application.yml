@@ -9,9 +9,9 @@ spring:
   datasource:
     # 基本属性
     name: dev
-    url: jdbc:mysql://122.51.155.126:33306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://39.107.32.198:3306/mtax_web01?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
-    password: 123456
+    password: xusheng#
     # 可以不配置，根据url自动识别，建议配置
     driver-class-name: com.mysql.jdbc.Driver
     ###################以下为druid增加的配置###########################
@@ -52,5 +52,6 @@ spring:
     useGlobalDataSourceStat: true
   resources:
     static-locations: classpath:/templates
-
+  main:
+    allow-bean-definition-overriding: true
 
