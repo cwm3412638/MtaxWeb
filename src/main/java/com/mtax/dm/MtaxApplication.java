@@ -1,6 +1,7 @@
 package com.mtax.dm;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -10,6 +11,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 @Slf4j
 @SpringBootApplication
+@MapperScan("com.mtax.dm.mapper")
 public class MtaxApplication {
     public static void main(String[] args)throws UnknownHostException {
         ConfigurableApplicationContext run = SpringApplication.run(MtaxApplication.class, args);
