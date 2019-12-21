@@ -8,10 +8,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @Api(tags = "渠道信息")
@@ -21,10 +18,25 @@ import org.springframework.web.bind.annotation.RestController;
 public class CanalController {
     @Autowired
     private CanalService canalService;
-    @ApiOperation(value = "添加渠道信息", notes="添加渠道信息")
+
+    @ApiOperation(value = "添加渠道信息", notes = "添加渠道信息")
     @PostMapping("/addCanal")
-    public JsonResult addCanal(@ApiParam(name = "渠道信息实体",value = "canal",required = true) @RequestBody Canal canal){
+    public JsonResult addCanal(@ApiParam(name = "渠道信息实体", value = "canal", required = true) @RequestBody Canal canal) {
         return canalService.addCanal(canal);
     }
 
+    @PostMapping("/updateCanal")
+    @ApiOperation(value = "修改渠道信息", notes = "修改渠道信息")
+    public JsonResult updateCanal(@ApiParam(name = "渠道信息实体", value = "canal", required = true) @RequestBody Canal canal) {
+        return canalService.updateCanal(canal);
+    }
+    @DeleteMapping("/delCanalById")
+    @ApiOperation(value = "根据id删除渠道信息", notes = "根据id删除渠道信息")
+    public JsonResult delCanalById(@ApiParam(name = "渠道id", value = "id", required = true)@RequestParam("id") String id){
+        return canalService.delCanalById(id);
+    }
+//    @GetMapping("/getAllCanal")
+//    public JsonResult getAllCanal(){
+//
+//    }
 }

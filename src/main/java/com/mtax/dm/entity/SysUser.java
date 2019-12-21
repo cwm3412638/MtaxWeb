@@ -40,5 +40,9 @@ public class SysUser {
     private Timestamp updateTime;
     @ApiModelProperty(value ="备注")
     private String remark;
+    @ApiModelProperty(value ="用户类型")
+    private Integer type;
+    @ApiModelProperty(value ="渠道id")
+    private String canalId;
 
 }

@@ -23,6 +23,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 
     @Override
     public int updatePassWord(SysUser loginUser) {
+        loginUser.setPassWord(new SimpleHash("md5", loginUser.getPassWord(), ByteSource.Util.bytes(loginUser.getUserName()), 2).toHex());
         return baseMapper.updateById(loginUser);
     }
 
@@ -36,5 +37,10 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         }else {
             return new JsonResult(false,ResultCode.COMMON_FAIL);
         }
+    }
+
+    @Override
+    public SysUser finUserByCanalId(String canalId) {
+        return baseMapper.selectOne(Wrappers.<SysUser>query().lambda().eq(SysUser::getCanalId,canalId));
     }
 }

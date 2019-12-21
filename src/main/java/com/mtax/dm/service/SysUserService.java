@@ -8,4 +8,5 @@ public interface SysUserService extends IService<SysUser> {
     SysUser findUserByUserName(String userName);
     int updatePassWord(SysUser loginUser);
     JsonResult addSysUser(SysUser sysUser);
+    SysUser finUserByCanalId(String canalId);
 }

@@ -6,4 +6,6 @@ import com.mtax.dm.entity.Canal;
 
 public interface CanalService extends IService<Canal> {
     JsonResult addCanal(Canal canal);
+    JsonResult updateCanal(Canal canal);
+    JsonResult delCanalById(String id);
 }
