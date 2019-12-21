@@ -1,5 +1,6 @@
 package com.mtax.dm.controller;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mtax.dm.common.result.JsonResult;
 import com.mtax.dm.entity.Canal;
 import com.mtax.dm.service.CanalService;
@@ -35,8 +36,15 @@ public class CanalController {
     public JsonResult delCanalById(@ApiParam(name = "渠道id", value = "id", required = true)@RequestParam("id") String id){
         return canalService.delCanalById(id);
     }
-//    @GetMapping("/getAllCanal")
-//    public JsonResult getAllCanal(){
-//
-//    }
+    @GetMapping("/getAllCount")
+    @ApiOperation(value = "查询所有渠道总数", notes = "查询所有渠道总数")
+    public JsonResult getAllCount(){
+          return canalService.getAllCount();
+    }
+    @GetMapping("/getCanalList")
+    @ApiOperation(value = "查询所有渠道信息", notes = "查询所有渠道信息")
+    public JsonResult getCanalList(){
+        return canalService.getCanalList();
+    }
+
 }

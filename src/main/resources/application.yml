@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 9001
 #mybatis-plus 开启打印sql
 mybatis-plus:
   configuration:

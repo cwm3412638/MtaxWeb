@@ -17,10 +17,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/sys")
@@ -30,7 +27,7 @@ public class LoginContoller {
     @Autowired
     private SysUserService sysUserService;
 
-    @RequestMapping("/login")
+    @PostMapping("/login")
     @ApiOperation(value = "登录", notes="登录")
     public JsonResult login(@RequestBody SysUser sysUser){
         if (sysUser==null ||sysUser.getUserName()==null ||sysUser.getPassWord()==null){
