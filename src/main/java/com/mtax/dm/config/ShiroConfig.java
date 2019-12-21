@@ -1,6 +1,7 @@
 package com.mtax.dm.config;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -36,6 +37,7 @@ public class ShiroConfig {
         //管理员，需要角色权限 “admin”
         filterChainDefinitionMap.put("/admin/**", "roles[admin]");*/
         //开放登陆接口
+        filterChainDefinitionMap.put("/sys/addUser", "anon");
         filterChainDefinitionMap.put("/sys/login", "anon");
         filterChainDefinitionMap.put("/", "anon");
         filterChainDefinitionMap.put("/doc.html", "anon");
@@ -61,6 +63,24 @@ public class ShiroConfig {
 
     }
     @Bean
+    public UserRealm customRealm() {
+        UserRealm userRealm = new UserRealm();
+        //设置加密方式
+        userRealm.setCredentialsMatcher(hashedCredentialsMatcher());
+        return  userRealm;
+    }
+    @Bean
+    public HashedCredentialsMatcher hashedCredentialsMatcher(){
+        HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
+        //指定加密方式
+        credentialsMatcher.setHashAlgorithmName("md5");
+        //加密次数
+        credentialsMatcher.setHashIterations(2);
+        //此处的设置，true加密用的hex编码，false用的base64编码
+        credentialsMatcher.setStoredCredentialsHexEncoded(true);
+        return credentialsMatcher;
+    }
+    @Bean
     public SecurityManager securityManager() {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
         // 设置realm.
@@ -69,10 +89,6 @@ public class ShiroConfig {
         return securityManager;
     }
 
-    @Bean
-    public UserRealm customRealm() {
-        return new UserRealm();
-    }
 
     @Bean
     public SimpleCookie rememberMeCookie() {
