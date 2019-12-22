@@ -47,4 +47,8 @@ public class Company {
     private String industryId;
     @ApiModelProperty(value ="创建时间")
     private Timestamp createTime;
+    @ApiModelProperty(value ="支付时间")
+    private Timestamp payTime;
+    @ApiModelProperty(value ="支付状态")
+    private Integer payType;
 }

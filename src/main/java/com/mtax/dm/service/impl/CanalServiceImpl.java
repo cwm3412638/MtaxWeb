@@ -1,15 +1,18 @@
 package com.mtax.dm.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.google.common.collect.Lists;
 import com.mtax.dm.common.result.JsonResult;
 import com.mtax.dm.common.result.ResultCode;
 import com.mtax.dm.entity.Canal;
+import com.mtax.dm.entity.Company;
 import com.mtax.dm.entity.SysUser;
+import com.mtax.dm.entity.vo.CanalVo;
+import com.mtax.dm.entity.vo.StatisticsVo;
 import com.mtax.dm.mapper.CanalMapper;
 import com.mtax.dm.service.CanalService;
-import com.mtax.dm.service.SysUserService;
+import com.mtax.dm.service.CompanyService;
 import com.mtax.dm.utils.IdUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -18,12 +21,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements CanalService {
     @Autowired
-    private SysUserService sysUserService;
+    private CompanyService companyService;
     @Override
     public JsonResult addCanal(Canal canal) {
         //生成id
@@ -71,5 +77,30 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
     @Override
     public JsonResult getCanalList() {
         return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.query()));
+    }
+
+    @Override
+    public JsonResult getCanalCountList() {
+      AtomicReference<Integer> CompanyCount= new AtomicReference<>(0);
+        AtomicReference<Integer> payCount= new AtomicReference<>(0);
+        ArrayList<CanalVo> objects = Lists.newArrayList();
+        List<Canal> canals = baseMapper.selectList(Wrappers.query());
+        canals.stream().forEach(item->{
+            List<Company> companyListByCanalId = companyService.getCompanyListByCanalId(item.getId());
+            CompanyCount.updateAndGet(v -> v + companyListByCanalId.size());
+            Integer companyPayCount = companyService.getCompanyPayCount(item.getId());
+            payCount.updateAndGet(v -> v + companyPayCount);
+            CanalVo canalVo = new CanalVo();
+            canalVo.setName(item.getName());
+            canalVo.setCompanyCount(companyListByCanalId.size());
+            canalVo.setPayCount(companyPayCount);
+            objects.add(canalVo);
+        });
+        StatisticsVo statisticsVo = new StatisticsVo();
+        statisticsVo.setCanalVos(objects);
+        statisticsVo.setCount(CompanyCount.get());
+        statisticsVo.setPayCount(payCount.get());
+
+        return new JsonResult(true,ResultCode.SUCCESS,statisticsVo);
     }
 }

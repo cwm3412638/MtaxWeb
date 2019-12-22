@@ -10,4 +10,5 @@ public interface CanalService extends IService<Canal> {
     JsonResult delCanalById(String id);
     JsonResult getAllCount();
     JsonResult getCanalList();
+    JsonResult getCanalCountList();
 }
