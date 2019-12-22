@@ -51,7 +51,6 @@ spring:
     # 合并多个DruidDataSource的监控数据
     useGlobalDataSourceStat: true
   resources:
-    static-locations: classpath:/templates
+    static-locations: classpath:/**
   main:
     allow-bean-definition-overriding: true
-

@@ -1,88 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="#####">
-      <change afterPath="$PROJECT_DIR$/.idea/MtaxWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/data/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap-dialog/css/bootstrap-dialog.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap-dialog/js/bootstrap-dialog.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="添加页面">
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/mobileSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/1113.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/31111.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ct01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/ball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/guang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/ren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/rule_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/rule_text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/sanjiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/submit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/dell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/jd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/result_text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/xcx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/xing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/微信图片_20191218165327.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/微信截图_20191219131932.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/支付二维码.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mtax/dm/MtaxApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mtax/dm/MtaxApplication.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,11 +62,11 @@
       <recent name="com.mtax.dm.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\javaProject\MtaxWeb\src\main\resources\templates" />
       <recent name="D:\javaProject\MtaxWeb\src\main\resources\static" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\resources\static\statics" />
       <recent name="D:\javaProject\MtaxWeb\src\main\resources" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\resources\templates" />
       <recent name="D:\javaProject\MtaxWeb\src\main\java\com\mtax\dm\shiro" />
-      <recent name="D:\javaProject\MtaxWeb\src\main\java\com\mtax\dm\common\exception" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -248,7 +176,8 @@
       <workItem from="1576726419662" duration="16739000" />
       <workItem from="1576807794857" duration="11022000" />
       <workItem from="1576839929150" duration="324000" />
-      <workItem from="1576840270997" duration="43793000" />
+      <workItem from="1576840270997" duration="48406000" />
+      <workItem from="1577014849352" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1576728429975</created>
@@ -320,7 +249,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577002164012</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加页面">
+      <created>1577009558507</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1577009558507</updated>
+    </task>
+    <task id="LOCAL-00012" summary="添加页面">
+      <created>1577013854041</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1577013854041</updated>
+    </task>
+    <task id="LOCAL-00013" summary="添加页面">
+      <created>1577016977637</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577016977637</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +298,8 @@
     <MESSAGE value="添加shrio密码加密" />
     <MESSAGE value="###" />
     <MESSAGE value="#####" />
-    <option name="LAST_COMMIT_MESSAGE" value="#####" />
+    <MESSAGE value="添加页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="871" y="176" key="#Deployment" />

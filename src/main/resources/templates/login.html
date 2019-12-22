@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>首页</title>
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/login.css" />
-    <link rel="stylesheet" href="/dep/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/common.css" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="stylesheet" href="../static/dep/bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
-    <img class="img_bg" src="/img/bg.jpg"/>
+    <img class="img_bg" src="../static/img/bg.jpg"/>
 	<div class="logo">
-		<img src="/img/31111.png" >
+		<img src="../static/img/31111.png" >
 	</div>
 	<div class="logo_text">
 		<img src="../static/img/1113.png" >
@@ -38,7 +38,7 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
 <script type="text/javascript">
 	$('.longin_btn input').click(function(){
 		var login_data = {}
@@ -46,7 +46,7 @@
 			login_data[$(this).attr('id')] = $(this).val()
 		}); 
 		$.ajax({
-			url:'http://122.51.155.126:9001/sys/login',
+			url:'/login',
 			dataType:'json',
 			method:'post',
 			contentType:'application/json;charset=utf-8',
