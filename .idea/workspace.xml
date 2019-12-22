@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="添加页面">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +177,7 @@
       <workItem from="1576807794857" duration="11022000" />
       <workItem from="1576839929150" duration="324000" />
       <workItem from="1576840270997" duration="48406000" />
-      <workItem from="1577014849352" duration="3453000" />
+      <workItem from="1577014849352" duration="3978000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1576728429975</created>
@@ -270,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577016977637</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加页面">
+      <created>1577018848932</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577018848932</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
