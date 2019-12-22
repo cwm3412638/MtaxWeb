@@ -1,0 +1,130 @@
+div{color: white;}
+.top_logo{
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	height: 7.5%;
+	background: #FFFFFF;
+	line-height: 4;
+	font-size: 16px;
+	color: black;
+}
+.logo{
+	top: 10%;
+	left: 5%;
+	width: 10%;
+}
+.logo_text{
+	top: 11.5%;
+	left: 15%;
+	width: 30%;
+}
+.btn_info{
+	top: 10.7%;
+	right: 7%;
+	background: #c109bd;
+	text-align: center;
+	padding: 1% 10%;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+}
+.logo_title{
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	top: 16%;
+}
+.logo_title h2{
+	text-align: center;
+	font-weight: 500;
+}
+.logo_title p{
+	text-align: right;
+	padding-right: 4%;
+}
+.img_bg2{
+    top: 23.5%;
+	width: 70%;
+	left: 15%;
+}
+.home_form{
+	width: 90%;
+    top: 46%;
+	left: 5%;
+	border: 1px solid #ccc;
+	background: rgba(63,48,161,0.7);
+	z-index: 10;
+	padding: 5% 2%;
+}
+.home_form form{
+	width: 100%;
+}
+.home_form form .form-group,.home_form form .tip{
+	position: relative;
+	margin-bottom: 10px;
+}
+.home_form .form-group>label{
+	padding-right: 0;
+	padding-left: 0;
+	width: 17%;
+	min-width: 61px;
+}
+.home_form .form-group>div{
+	width: 76%;
+}
+.long_label label{
+	width: 33%!important;
+}
+.long_label div{
+	width: 65%!important;
+}
+.home_form .form-group>div{
+	display: inline-block;
+}
+.home_form .tip{
+	color: #ea9c1b;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.home_form .address{
+	margin-bottom: 0;
+}
+.home_form .address div{
+	width: 34%;
+	padding: 0;
+}
+.btn_event{
+	width: 100%;
+	bottom: 1%;
+	left: 0;
+}
+.btn_event button{
+	padding: 2% 5%;
+	border: none;
+	border-radius:3px ;
+	color: #000000;
+	font-weight: bold;
+}
+.btn_event .reset button{
+	padding:  2% 15%;
+	background: #ceb7b7;
+}
+.btn_event .next button{
+	padding:  2% 8%;
+	background: #ea9c1b;
+}
+.btn_event .reset{
+	width: 50%;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.btn_event .next{
+	width: 50%;
+	float: left;
+	position: relative;
+	text-align: left;
+}

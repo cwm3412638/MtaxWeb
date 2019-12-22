@@ -1,0 +1,81 @@
+*{
+    text-shadow:none;
+    margin:0;
+    padding: 0;
+}
+html{
+    height:100%;
+    font-size:62.5%;
+    overflow-y:scroll;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+body{
+    height:100%;
+    margin:0 auto;
+    font-size:12px;
+}
+body, button, input, select, textarea {
+    font-family: "Microsoft YaHei UI Light", "Microsoft Yahei", "Helvetica Neue", "PingHei", Arial, Helvetica, sans-serif, Lato;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+}
+em, i{
+    font-style:normal;
+}
+strong{
+    font-weight:normal;
+}
+a{
+    text-decoration:none;
+    color:#444;
+}
+ul, ol {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+ul li, ol li{
+    list-style-type:none;
+}
+form {
+    margin: 0;
+}
+
+
+img{width: 100%;}
+div{ position: absolute;color: white;}
+.img_bg{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.left_logo{ left: 7%; top: 4%; width: 13%;}
+
+.center_logo{ left: 50%; width: 48%; margin-left: -24%; top: 7%;}
+.center_logo{ left: 50%; width: 48%; margin-left: -24%; top: 7%;}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-dialog{
+	top: 30%;
+}
+.modal-header,.modal-body,.modal-footer{
+	position: relative!important;
+}
+.modal-body div{
+	position: relative;
+}
+.modal-body .form-group label{
+	display: inline-block;
+	width: 30%;
+	color: #000;
+	padding: 0;
+}
+.modal-body .form-group div{
+	display: inline-block;
+	width: 65%;
+}

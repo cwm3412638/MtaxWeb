@@ -1,18 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/word/template.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/template.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="#####">
+      <change afterPath="$PROJECT_DIR$/.idea/MtaxWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/data/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap-dialog/css/bootstrap-dialog.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap-dialog/js/bootstrap-dialog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dep/mobileSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/1113.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/31111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/CT04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/common/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ct01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/guang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/ren.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/rule_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/rule_text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index1/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/sanjiao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index2/submit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/dell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/jd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/result_text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/xcx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/index3/xing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/微信图片_20191218165327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/微信截图_20191219131932.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/支付二维码.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/channel_manage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mtax/dm/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mtax/dm/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mtax/dm/MtaxApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mtax/dm/MtaxApplication.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +93,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,18 +125,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mtax/dm/word" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mtax.dm.controller" />
       <recent name="com.mtax.dm.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mtax-web\src\main\java\com\mtax\dm\word" />
-      <recent name="D:\mtax-web\src\main\resources\templates" />
-      <recent name="D:\mtax-web\src\main\resources\template" />
-      <recent name="D:\mtax-web\src\main\resources" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\resources\templates" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\resources\static" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\resources" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\java\com\mtax\dm\shiro" />
+      <recent name="D:\javaProject\MtaxWeb\src\main\java\com\mtax\dm\common\exception" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -79,7 +154,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MtaxApplication">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MtaxApplication (1)">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mtax.dm.controller.test" />
       <module name="mtax-web" />
@@ -93,7 +180,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MtaxApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/MtaxApplication.http" runType="Run single request">
+    <configuration name="MtaxApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/MtaxApplication.http">
       <method v="2" />
     </configuration>
     <configuration name="test.imageWordExport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -112,18 +199,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.wordtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mtax-web" />
+    <configuration name="MtaxApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MtaxWeb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mtax.dm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mtax.dm" />
-      <option name="MAIN_CLASS_NAME" value="com.mtax.dm.test" />
-      <option name="METHOD_NAME" value="wordtest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtax.dm.MtaxApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,25 +227,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MtaxApplication (1)" />
         <item itemvalue="Spring Boot.MtaxApplication" />
         <item itemvalue="JUnit.test.imageWordExport" />
         <item itemvalue="HTTP Request.MtaxApplication#1" />
         <item itemvalue="Application.test" />
-        <item itemvalue="JUnit.test.wordtest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -174,6 +246,9 @@
       <option name="presentableId" value="Default" />
       <updated>1576726416718</updated>
       <workItem from="1576726419662" duration="16739000" />
+      <workItem from="1576807794857" duration="11022000" />
+      <workItem from="1576839929150" duration="324000" />
+      <workItem from="1576840270997" duration="43793000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1576728429975</created>
@@ -196,103 +271,141 @@
       <option name="project" value="LOCAL" />
       <updated>1576733734673</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="####">
+      <created>1576840865315</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576840865315</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加Slf4j日志输出到文件">
+      <created>1576841170169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576841170169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加shrio">
+      <created>1576856130046</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576856130046</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加shrio密码加密">
+      <created>1576899039421</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576899039421</updated>
+    </task>
+    <task id="LOCAL-00008" summary="###">
+      <created>1576903883088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576903883088</updated>
+    </task>
+    <task id="LOCAL-00009" summary="#####">
+      <created>1576929989735</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576929989735</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#####">
+      <created>1577002164012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1577002164012</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
     <MESSAGE value="添加EasyPoi" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加EasyPoi" />
+    <MESSAGE value="####" />
+    <MESSAGE value="添加Slf4j日志输出到文件" />
+    <MESSAGE value="添加shrio" />
+    <MESSAGE value="添加shrio密码加密" />
+    <MESSAGE value="###" />
+    <MESSAGE value="#####" />
+    <option name="LAST_COMMIT_MESSAGE" value="#####" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="871" y="176" key="#Deployment" timestamp="1576728423253">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="871" y="176" key="#Deployment/0.0.2560.1040@0.0.2560.1040" timestamp="1576728423253" />
-    <state x="869" y="106" key="CommitChangelistDialog2" timestamp="1576733733565">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="869" y="106" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1576733733565" />
-    <state x="1059" y="258" key="FileChooserDialogImpl" timestamp="1576728661406">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1059" y="258" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1576728661406" />
-    <state x="1056" y="390" width="471" height="260" key="Github.ShareDialog" timestamp="1576731806735">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1056" y="390" width="471" height="260" key="Github.ShareDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1576731806735" />
-    <state width="2515" height="313" key="GridCell.Tab.0.bottom" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.0.center" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.0.left" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.0.right" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.1.bottom" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.1.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.1.center" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.1.center/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.1.left" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.1.left/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="2515" height="313" key="GridCell.Tab.1.right" timestamp="1576744856044">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2515" height="313" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1576744856044" />
-    <state width="1257" height="160" key="GridCell.Tab.2.bottom" timestamp="1576742215071">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="1257" height="160" key="GridCell.Tab.2.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1576742215071" />
-    <state width="1257" height="160" key="GridCell.Tab.2.center" timestamp="1576742215071">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="1257" height="160" key="GridCell.Tab.2.center/0.0.2560.1040@0.0.2560.1040" timestamp="1576742215071" />
-    <state width="1257" height="160" key="GridCell.Tab.2.left" timestamp="1576742215071">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="1257" height="160" key="GridCell.Tab.2.left/0.0.2560.1040@0.0.2560.1040" timestamp="1576742215071" />
-    <state width="1257" height="160" key="GridCell.Tab.2.right" timestamp="1576742215071">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="1257" height="160" key="GridCell.Tab.2.right/0.0.2560.1040@0.0.2560.1040" timestamp="1576742215071" />
-    <state x="809" y="173" key="Maven.ArtifactSearchDialog" timestamp="1576742045243">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="809" y="173" key="Maven.ArtifactSearchDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1576742045243" />
-    <state x="871" y="251" key="Vcs.Push.Dialog.v2" timestamp="1576733762641">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="871" y="251" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1576733762641" />
+    <state x="871" y="176" key="#Deployment" />
+    <state x="871" y="176" key="#Deployment/0.0.2560.1040@0.0.2560.1040" />
+    <state x="869" y="106" key="CommitChangelistDialog2" />
+    <state x="869" y="106" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" />
+    <state x="1059" y="258" key="FileChooserDialogImpl" />
+    <state x="1059" y="258" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" />
+    <state x="1056" y="390" width="471" height="260" key="Github.ShareDialog" />
+    <state x="1056" y="390" width="471" height="260" key="Github.ShareDialog/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.0.bottom" />
+    <state width="2515" height="313" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.0.center" />
+    <state width="2515" height="313" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.0.left" />
+    <state width="2515" height="313" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.0.right" />
+    <state width="2515" height="313" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.1.bottom" />
+    <state width="2515" height="313" key="GridCell.Tab.1.bottom/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.1.center" />
+    <state width="2515" height="313" key="GridCell.Tab.1.center/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.1.left" />
+    <state width="2515" height="313" key="GridCell.Tab.1.left/0.0.2560.1040@0.0.2560.1040" />
+    <state width="2515" height="313" key="GridCell.Tab.1.right" />
+    <state width="2515" height="313" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" />
+    <state width="1257" height="160" key="GridCell.Tab.2.bottom" />
+    <state width="1257" height="160" key="GridCell.Tab.2.bottom/0.0.2560.1040@0.0.2560.1040" />
+    <state width="1257" height="160" key="GridCell.Tab.2.center" />
+    <state width="1257" height="160" key="GridCell.Tab.2.center/0.0.2560.1040@0.0.2560.1040" />
+    <state width="1257" height="160" key="GridCell.Tab.2.left" />
+    <state width="1257" height="160" key="GridCell.Tab.2.left/0.0.2560.1040@0.0.2560.1040" />
+    <state width="1257" height="160" key="GridCell.Tab.2.right" />
+    <state width="1257" height="160" key="GridCell.Tab.2.right/0.0.2560.1040@0.0.2560.1040" />
+    <state x="809" y="173" key="Maven.ArtifactSearchDialog" />
+    <state x="809" y="173" key="Maven.ArtifactSearchDialog/0.0.2560.1040@0.0.2560.1040" />
+    <state x="871" y="251" key="Vcs.Push.Dialog.v2" />
+    <state x="871" y="251" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/cn/afterturn/easypoi-base/4.1.0/easypoi-base-4.1.0-sources.jar!/cn/afterturn/easypoi/word/parse/ParseWord07.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/cn/afterturn/easypoi-base/4.1.0/easypoi-base-4.1.0-sources.jar!/cn/afterturn/easypoi/word/parse/ParseWord07.java</url>
           <line>206</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/cn/afterturn/easypoi-base/4.1.0/easypoi-base-4.1.0-sources.jar!/cn/afterturn/easypoi/cache/WordCache.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/cn/afterturn/easypoi-base/4.1.0/easypoi-base-4.1.0-sources.jar!/cn/afterturn/easypoi/cache/WordCache.java</url>
           <line>36</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CanalServiceImpl.java</url>
+          <line>82</line>
+          <properties class="com.mtax.dm.service.impl.CanalServiceImpl" method="getCanalCountList" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

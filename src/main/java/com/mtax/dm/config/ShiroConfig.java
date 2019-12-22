@@ -23,10 +23,10 @@ public class ShiroConfig {
         // 必须设置 SecurityManager
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         // setLoginUrl 如果不设置值，默认会自动寻找Web工程根目录下的"/login.html"页面 或 "/login" 映射
-//        shiroFilterFactoryBean.setLoginUrl("/login.html");
+        shiroFilterFactoryBean.setLoginUrl("/login.html");
 //        shiroFilterFactoryBean.setSuccessUrl("/webManage/html/index.html");
         // 设置无权限时跳转的 url;
-        //shiroFilterFactoryBean.setUnauthorizedUrl("/login.html");
+        shiroFilterFactoryBean.setUnauthorizedUrl("/login.html");
 
         // 设置拦截器
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
@@ -41,7 +41,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/sys/login", "anon");
         filterChainDefinitionMap.put("/", "anon");
         filterChainDefinitionMap.put("/doc.html", "anon");
-        filterChainDefinitionMap.put("/**/*.js", "anon");
+        filterChainDefinitionMap.put("/static/**/*.js", "anon");
         filterChainDefinitionMap.put("/**/*.css", "anon");
         filterChainDefinitionMap.put("/**/*.html", "anon");
         filterChainDefinitionMap.put("/**/*.svg", "anon");

@@ -1,0 +1,105 @@
+.form_filter {
+  width: 100%;
+  top: 15%;
+  padding: 0 4%; }
+  .form_filter .form-group {
+    position: relative !important; }
+    .form_filter .form-group label {
+      width: 35%;
+      padding: 0;
+      min-width: 10rem;
+      display: inline-block; }
+    .form_filter .form-group div {
+      padding: 0;
+      width: 63%;
+      display: inline-block; }
+    .form_filter .form-group .date select {
+      width: 43%;
+      display: inline-block; }
+    .form_filter .form-group .date span {
+      margin: 0 1%; }
+
+.table_title {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.6rem;
+  top: 28%;
+  padding-left: 4%; }
+
+.data_table {
+  width: 100%;
+  top: 32%;
+  padding: 0 4%;
+  height: 60%;
+  overflow-y: scroll; }
+  .data_table table {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff; }
+    .data_table table thead {
+      background: #992696; }
+      .data_table table thead th {
+        text-align: center;
+        padding: 2% 0;
+        width: 33.3%;
+        border: 1px solid #bbb; }
+    .data_table table tbody tr td {
+      border-left: 1px solid #bbb;
+      min-height: 37px; }
+    .data_table table tbody tr:nth-child(odd) {
+      background: #4532a2; }
+    .data_table table tbody tr:nth-child(even) {
+      background: #544598; }
+
+.sum_num {
+  top: 95%;
+  width: 100%;
+  padding: 0 4%; }
+  .sum_num span:nth-child(1) {
+    margin-right: 5%; }
+  .sum_num span {
+    width: 4rem;
+    display: inline-block;
+    border-bottom: 1px solid #fff; }
+
+.channel_search .data_table {
+  top: 25%;
+  height: 65%; }
+.channel_search .sum_num {
+  top: 93%; }
+
+.channel_setting .form_filter input {
+  width: 65%;
+  display: inline-block;
+  border-radius: 0; }
+.channel_setting .form_filter button {
+  width: 33%;
+  display: inline-block;
+  background: #EA9C1B;
+  border-color: #bbb; }
+.channel_setting .addChannel {
+  width: 100%;
+  padding: 0 4%;
+  top: 25%; }
+  .channel_setting .addChannel button {
+    padding: 2% 15%;
+    background: #3f3597;
+    border: 1px solid #bbb;
+    border-radius: 3px; }
+.channel_setting .data_table {
+  top: 31%;
+  height: 65%; }
+  .channel_setting .data_table table thead tr th:nth-child(1) {
+    width: 20%; }
+
+.channel_single .table_title {
+  top: 15%; }
+.channel_single .form_filter {
+  top: 20%; }
+.channel_single .data_table {
+  top: 27%;
+  height: 65%; }
+  .channel_single .data_table table thead tr th:nth-child(1) {
+    width: 20%; }
+
+/*# sourceMappingURL=channel_manage.css.map */

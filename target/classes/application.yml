@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 9001
 #mybatis-plus 开启打印sql
 mybatis-plus:
   configuration:
@@ -9,7 +9,7 @@ spring:
   datasource:
     # 基本属性
     name: dev
-    url: jdbc:mysql://122.51.155.126:33306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://122.51.155.126:33306/mtax_web01?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
     password: 123456
     # 可以不配置，根据url自动识别，建议配置
@@ -52,5 +52,6 @@ spring:
     useGlobalDataSourceStat: true
   resources:
     static-locations: classpath:/templates
-
+  main:
+    allow-bean-definition-overriding: true
 

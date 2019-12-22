@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../static/css/common.css" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="stylesheet" href="../static/dep/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+    <img class="img_bg" src="../static/img/bg.jpg"/>
+	<div class="logo">
+		<img src="../static/img/31111.png" >
+	</div>
+	<div class="logo_text">
+		<img src="../static/img/1113.png" >
+	</div>
+	<div class="login_form">
+		<h3>企业效能管理云应用渠道管理</h3>
+		<form action="">
+			  <div class="form-group">
+			    <label for="username" class="col-sm-3 control-label">用户名:</label>
+			    <div class="col-sm-7">
+			      <input type="text" class="form-control" id="userName" placeholder="请输入用户名">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="password" class="col-sm-3 control-label">密码:</label>
+			    <div class="col-sm-7">
+			      <input type="password" class="form-control" id="passWord" placeholder="请输入密码">
+			    </div>
+			  </div>
+			  <div class="form-group longin_btn">
+			      <input type="button" value="登录"/>
+			  </div>
+		</form>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.longin_btn input').click(function(){
+		var login_data = {}
+		$(".form-control").each(function(){ 
+			login_data[$(this).attr('id')] = $(this).val()
+		}); 
+		$.ajax({
+			url:'http://122.51.155.126:9001/sys/login',
+			dataType:'json',
+			method:'post',
+			contentType:'application/json;charset=utf-8',
+			data:JSON.stringify(login_data),
+			success:function(req){
+				if(req.data.type != 0){
+					window.location.href='channel_group.html'
+				}else{
+					window.location.href='channel_single.html'	
+				}
+			}
+		})
+	})
+</script>
+</html>
