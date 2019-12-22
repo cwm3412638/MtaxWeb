@@ -24,10 +24,9 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         // setLoginUrl 如果不设置值，默认会自动寻找Web工程根目录下的"/login.html"页面 或 "/login" 映射
         shiroFilterFactoryBean.setLoginUrl("/login.html");
-        //  shiroFilterFactoryBean.setSuccessUrl("/webManage/html/index.html");
+      // shiroFilterFactoryBean.setSuccessUrl("/index2.html");
         // 设置无权限时跳转的 url;
         shiroFilterFactoryBean.setUnauthorizedUrl("/login.html");
-
         // 设置拦截器
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         //游客，开发权限
@@ -37,12 +36,10 @@ public class ShiroConfig {
         //管理员，需要角色权限 “admin”
         filterChainDefinitionMap.put("/admin/**", "roles[admin]");*/
         //开放登陆接口
-        filterChainDefinitionMap.put("/login.html", "anon");
-        filterChainDefinitionMap.put("/resources/**", "anon");
-        filterChainDefinitionMap.put("/static/**", "anon");
-        filterChainDefinitionMap.put("/sys/addUser", "anon");
-        filterChainDefinitionMap.put("/sys/login", "anon");
         filterChainDefinitionMap.put("/", "anon");
+        filterChainDefinitionMap.put("/static/**", "anon");
+        filterChainDefinitionMap.put("/addUser", "anon");
+        filterChainDefinitionMap.put("/login", "anon");
         filterChainDefinitionMap.put("/doc.html", "anon");
         filterChainDefinitionMap.put("/druid/**", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html", "anon");

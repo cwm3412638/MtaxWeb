@@ -20,7 +20,6 @@ import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/sys")
 @Api(tags = "登录操作")
 @Slf4j
 public class LoginContoller {
