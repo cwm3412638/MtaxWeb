@@ -93,7 +93,7 @@ public class LoginContoller {
         return new JsonResult(true, ResultCode.SUCCESS);
     }
 
-    @GetMapping("/list")
+    @GetMapping("/user/list")
     @ApiOperation(value = "用户列表", notes = "用户列表")
     public JsonResult list(@RequestParam String canalId) {
         if (canalId == null || canalId.equals("")) {
@@ -105,7 +105,7 @@ public class LoginContoller {
         }
     }
 
-    @PostMapping("/addUser")
+    @PostMapping("/user/addUser")
     @ApiOperation(value = "添加用户", notes = "添加用户")
     public JsonResult addUser(@RequestBody SysUser sysUser) {
         if (sysUser == null) {
@@ -120,7 +120,7 @@ public class LoginContoller {
         return sysUserService.addSysUser(sysUser);
     }
 
-    @PutMapping("/editUser")
+    @PutMapping("/user/editUser")
     @ApiOperation(value = "修改用户", notes = "修改用户")
     public JsonResult editUser(@RequestBody SysUser sysUser) {
         if (sysUser.getId() != null) {
@@ -129,7 +129,7 @@ public class LoginContoller {
         return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
     }
 
-    @DeleteMapping("/deleteUser/{id}")
+    @DeleteMapping("/user/deleteUser/{id}")
     @ApiOperation(value = "删除用户", notes = "删除用户")
     public JsonResult deleteUser(@PathVariable String id) {
         if (null != id) {
@@ -138,7 +138,7 @@ public class LoginContoller {
         return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
     }
 
-    @GetMapping("/getUserCount")
+    @GetMapping("/user/getUserCount")
     @ApiOperation(value = "获取用户数量", notes = "获取用户数量")
     public JsonResult getUserCount() {
         return sysUserService.getUserCount();
