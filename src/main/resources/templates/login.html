@@ -42,9 +42,9 @@
 <script type="text/javascript">
 	$('.longin_btn input').click(function(){
 		var login_data = {}
-		$(".form-control").each(function(){ 
+		$(".form-control").each(function(){
 			login_data[$(this).attr('id')] = $(this).val()
-		}); 
+		});
 		$.ajax({
 			url:'/login',
 			dataType:'json',
@@ -52,10 +52,10 @@
 			contentType:'application/json;charset=utf-8',
 			data:JSON.stringify(login_data),
 			success:function(req){
-				if(req.data.type != 0){
+				if(req.data.type == 0){
 					window.location.href='channel_group.html'
 				}else{
-					window.location.href='channel_single.html'	
+					window.location.href='channel_single.html'
 				}
 			}
 		})

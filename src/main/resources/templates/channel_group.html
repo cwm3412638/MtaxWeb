@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>首页</title>
     <link rel="stylesheet" href="../static/css/common.css" />
-    <link rel="stylesheet" href="../static/dep/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../static/dep/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../static/dep/Mdate/needcss/Mdate.css" />
 	<style type="text/css">
 		.logo{
 			top: 2%;
@@ -154,7 +155,7 @@
 	<h3 class="title">企业效能管理云应用渠道管理</h3>
 	<div class="card">
 		<p>
-			现有渠道合计：<span>121</span>
+			现有渠道合计：<span class="channelSum"></span>
 			<span class="glyphicon glyphicon-minus-sign"></span>
 			<span class="glyphicon glyphicon-plus-sign"></span>
 		</p>
@@ -210,9 +211,7 @@
 			选择查询区间：
 		</p>
 		<div class="filter">
-			<select class="form-control">
-			  <option>1</option>
-			</select>
+			<input type="text" class="form-control" id="dateSelectorOne" placeholder="选择日期">
 			<span>至</span>
 			<select class="form-control">
 			  <option>1</option>
@@ -227,17 +226,44 @@
 	</div>
 </body>
 <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script src="../static/dep/Mdate/iScroll.js"></script>
+<script src="../static/dep/Mdate/Mdate.js"></script>
 <script type="text/javascript">
-	$('.card').click(function(){
-		if($(this).index('.card') == 0){
-			window.location.href = 'sub_page/channel_manage.html'
-		}else if($(this).index('.card') == 1){
-			window.location.href = 'sub_page/user_manage.html'
-		}else if($(this).index('.card') == 2){
-			window.location.href = 'sub_page/channel_search.html'
-		}else{
-			window.location.href = 'sub_page/channel_setting.html'
+	$(function () {
+		// 日历插件初始化
+		new Mdate("dateSelectorOne");
+
+		// 点击link头跳转相应页面
+		$('.btn_link').click(function(){
+			if($(this).index('.btn_link') == 0){
+				window.location.href = 'sub_page/channel_manage.html'
+			}else if($(this).index('.btn_link') == 1){
+				window.location.href = 'sub_page/user_manage.html'
+			}else if($(this).index('.btn_link') == 2){
+				window.location.href = 'sub_page/channel_search.html'
+			}else{
+				window.location.href = 'sub_page/channel_setting.html'
+			}
+		})
+		// 获取数据公共方法
+		function getData(obj){
+			var result = {};
+			$.ajax({
+				url:obj.url,
+				dataType:'json',
+				method:obj.method,
+				data:obj.data,
+				async:false,
+				success:function(req){
+					if(req.success){
+						result = req
+					}
+				}
+			})
+			return result
 		}
+		// 渠道总数
+		$('.channelSum').html(getData({url:'/canal/getAllCount',method:'get',data:''}).data)
 	})
 </script>
 </html>
