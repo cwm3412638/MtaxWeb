@@ -27,9 +27,9 @@ public class LoginContoller {
     private SysUserService sysUserService;
 
     @PostMapping("/login")
-    @ApiOperation(value = "登录", notes="登录")
-    public JsonResult login(@RequestBody SysUser sysUser){
-        if (sysUser==null ||sysUser.getUserName()==null ||sysUser.getPassWord()==null){
+    @ApiOperation(value = "登录", notes = "登录")
+    public JsonResult login(@RequestBody SysUser sysUser) {
+        if (sysUser == null || sysUser.getUserName() == null || sysUser.getPassWord() == null) {
             return new JsonResult(false, ResultCode.PARAM_IS_BLANK);
         }
         UsernamePasswordToken token = new UsernamePasswordToken(sysUser.getUserName(), sysUser.getPassWord());
@@ -40,7 +40,7 @@ public class LoginContoller {
             subject.login(token);
         } catch (IncorrectCredentialsException ice) {
             // 捕获密码错误异常
-            return new JsonResult(false,ResultCode.USER_CREDENTIALS_ERROR);
+            return new JsonResult(false, ResultCode.USER_CREDENTIALS_ERROR);
         } catch (UnknownAccountException uae) {
             // 捕获未知用户名异常
             return new JsonResult(false, ResultCode.USER_ACCOUNT_NOT_EXIST);
@@ -53,59 +53,80 @@ public class LoginContoller {
         }
         SysUser userByUserName = sysUserService.findUserByUserName(sysUser.getUserName());
         subject.getSession().setAttribute("loginUser", userByUserName);
-        log.info("用户：{}"+userByUserName+"登录成功");
-        return new JsonResult(true, ResultCode.SUCCESS,userByUserName);
+        log.info("用户：{}" + userByUserName + "登录成功");
+        return new JsonResult(true, ResultCode.SUCCESS, userByUserName);
     }
 
     @PostMapping("/logOut")
-    @ApiOperation(value = "退出", notes="退出")
-    public JsonResult logOut(){
+    @ApiOperation(value = "退出", notes = "退出")
+    public JsonResult logOut() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return new JsonResult(true,ResultCode.SUCCESS);
+        return new JsonResult(true, ResultCode.SUCCESS);
     }
 
     /**
      * 修改密码
+     *
      * @param sysUser
      * @return
      */
     @PostMapping("/updatePassWord")
-    @ApiOperation(value = "修改密码", notes="修改密码")
-    public JsonResult updatePassWord( @RequestBody SysUser sysUser){
-        if (sysUser==null){
-            return new JsonResult(false,ResultCode.PARAM_IS_BLANK);
+    @ApiOperation(value = "修改密码", notes = "修改密码")
+    public JsonResult updatePassWord(@RequestBody SysUser sysUser) {
+        if (sysUser == null) {
+            return new JsonResult(false, ResultCode.PARAM_IS_BLANK);
         }
-        if (sysUser.getPassWord()==null||sysUser.getPassWord().length()<0){
-            return new JsonResult(false,ResultCode.PARAM_IS_BLANK);
+        if (sysUser.getPassWord() == null || sysUser.getPassWord().length() < 0) {
+            return new JsonResult(false, ResultCode.PARAM_IS_BLANK);
         }
         Subject subject = SecurityUtils.getSubject();
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
         loginUser.setPassWord(sysUser.getPassWord());
         int i = sysUserService.updatePassWord(loginUser);
-        if (i==0){
-            return new JsonResult(false,ResultCode.COMMON_FAIL);
+        if (i == 0) {
+            return new JsonResult(false, ResultCode.COMMON_FAIL);
         }
         subject.logout();
-        return new JsonResult(true,ResultCode.SUCCESS);
+        return new JsonResult(true, ResultCode.SUCCESS);
     }
+
     @PostMapping("/addUser")
-    @ApiOperation(value = "添加用户", notes="添加用户")
-    public JsonResult addUser(@RequestBody SysUser sysUser){
-        if (sysUser==null){
-            return new JsonResult(false,ResultCode.PARAM_IS_BLANK);
+    @ApiOperation(value = "添加用户", notes = "添加用户")
+    public JsonResult addUser(@RequestBody SysUser sysUser) {
+        if (sysUser == null) {
+            return new JsonResult(false, ResultCode.PARAM_IS_BLANK);
         }
-        if (sysUser.getUserName()==null){
-            return new JsonResult(false,ResultCode.PARAM_NOT_COMPLETE);
+        if (sysUser.getUserName() == null) {
+            return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
         }
-        if (sysUser.getPassWord()==null){
-            return new JsonResult(false,ResultCode.PARAM_NOT_COMPLETE);
+        if (sysUser.getPassWord() == null) {
+            return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
         }
         return sysUserService.addSysUser(sysUser);
     }
+
+    @PutMapping("/editUser")
+    @ApiOperation(value = "修改用户", notes = "修改用户")
+    public JsonResult editUser(@RequestBody SysUser sysUser) {
+        if (sysUser.getId() != null) {
+            return sysUserService.editUser(sysUser);
+        }
+        return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
+    }
+
+    @DeleteMapping("/deleteUser/{id}")
+    @ApiOperation(value = "删除用户", notes = "删除用户")
+    public JsonResult deleteUser(@PathVariable String id) {
+        if (null != id) {
+            return new JsonResult(sysUserService.removeById(id));
+        }
+        return new JsonResult(false, ResultCode.PARAM_NOT_COMPLETE);
+    }
+
     @GetMapping("/getUserCount")
-    @ApiOperation(value = "获取用户数量", notes="获取用户数量")
-    public JsonResult getUserCount(){
+    @ApiOperation(value = "获取用户数量", notes = "获取用户数量")
+    public JsonResult getUserCount() {
         return sysUserService.getUserCount();
     }
 }
