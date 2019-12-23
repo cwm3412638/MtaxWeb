@@ -9,7 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
-import java.sql.Timestamp;
+
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -33,11 +34,11 @@ public class SysUser {
     @ApiModelProperty(value ="创建者")
     private String createBy;
     @ApiModelProperty(value ="创建时间")
-    private Timestamp createTime;
+    private Date createTime;
     @ApiModelProperty(value ="修改者")
     private String updateBy;
     @ApiModelProperty(value ="修改时间")
-    private Timestamp updateTime;
+    private Date updateTime;
     @ApiModelProperty(value ="备注")
     private String remark;
     @ApiModelProperty(value ="用户类型")

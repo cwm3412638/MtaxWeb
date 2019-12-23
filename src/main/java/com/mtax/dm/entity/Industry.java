@@ -9,7 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
-import java.sql.Timestamp;
+
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -27,5 +28,5 @@ public class Industry {
     @ApiModelProperty(value ="逻辑删除")
     private Integer delFlg;
     @ApiModelProperty(value ="创建时间")
-    private Timestamp createTime;
+    private Date createTime;
 }

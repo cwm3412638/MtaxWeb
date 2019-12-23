@@ -43,4 +43,9 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public SysUser finUserByCanalId(String canalId) {
         return baseMapper.selectOne(Wrappers.<SysUser>query().lambda().eq(SysUser::getCanalId,canalId));
     }
+
+    @Override
+    public JsonResult getUserCount() {
+        return new JsonResult<>(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<SysUser>query()));
+    }
 }

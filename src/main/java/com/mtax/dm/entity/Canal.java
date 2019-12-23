@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -33,11 +33,11 @@ public class Canal {
     @ApiModelProperty(value ="区")
     private String area;
     @ApiModelProperty(value ="创建时间")
-    private Timestamp createTime;
+    private Date createTime;
     @ApiModelProperty(value ="创建人")
     private String createBy;
     @ApiModelProperty(value ="修改时间")
-    private Timestamp updateTime;
+    private Date updateTime;
     @ApiModelProperty(value ="修改人")
     private String updateBy;
     @ApiModelProperty(value ="备注")

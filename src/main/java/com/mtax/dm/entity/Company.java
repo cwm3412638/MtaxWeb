@@ -8,7 +8,7 @@ import lombok.*;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 
 /**
@@ -46,9 +46,9 @@ public class Company {
     @ApiModelProperty(value ="所属行业Id")
     private String industryId;
     @ApiModelProperty(value ="创建时间")
-    private Timestamp createTime;
+    private Date createTime;
     @ApiModelProperty(value ="支付时间")
-    private Timestamp payTime;
+    private Date payTime;
     @ApiModelProperty(value ="支付状态")
     private Integer payType;
 }

@@ -103,4 +103,9 @@ public class LoginContoller {
         }
         return sysUserService.addSysUser(sysUser);
     }
+    @GetMapping("/getUserCount")
+    @ApiOperation(value = "获取用户数量", notes="获取用户数量")
+    public JsonResult getUserCount(){
+        return sysUserService.getUserCount();
+    }
 }

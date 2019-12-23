@@ -182,13 +182,18 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
+                <excludes>
+                    <exclude>static/**</exclude>
+                </excludes>
+                <includes>
+                    <include>**/*</include>
+                </includes>
             </resource>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
                 <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.json</include>
-                    <include>**/*.ftl</include>
+                    <include>static/**</include>
                 </includes>
             </resource>
         </resources>

@@ -20,8 +20,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -50,7 +50,7 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
         Subject subject = SecurityUtils.getSubject();
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
         canal.setUpdateBy(loginUser.getId());
-        canal.setUpdateTime(new Timestamp(System.currentTimeMillis()));
+        canal.setUpdateTime(new Date());
         int i = baseMapper.updateById(canal);
         if (i==1){
             return new JsonResult(true,ResultCode.SUCCESS);
