@@ -41,11 +41,20 @@
 	<h3 class="title">企业效能管理云应用渠道管理</h3>
 	<div class="form_filter">
 		<div class="form-group">
-		  <label for="passworf_edit" class="col-sm-3 control-label">管理后台密码修改</label>
-		  <div class="col-sm-7">
-			  <input type="password" class="form-control" placeholder="请输入">
-			  <button type="button" class="form-control">确认</button>
-		  </div>
+			<label for="password_edit" class="col-sm-3 control-label" style="min-width: 0px;padding:0;width: 6rem">地区查询</label>
+			<div class="col-sm-3" style="width: 38%">
+				<select name="input_province" id="input_province" class="form-control" >
+					<option value="">所在省份</option>
+				</select>
+			</div>
+			<div class="col-sm-3" style="width: 38%">
+				<select name="input_city" id="input_city" class="form-control">
+					<option value="">--市--</option>
+				</select>
+			</div>
+			<div class="col-sm-3" style="width: 20%;float: right;margin-top: 1rem">
+				<button type="button" class="form-control" style="width: 100%">确认</button>
+			</div>
 		</div>
 	</div>
 	<div class="addChannel">
@@ -58,7 +67,7 @@
 				<th>管理设置</th>
 			</thead>
 			<tbody class="data_tbody">
-				
+
 			</tbody>
 		</table>
 	</div>
@@ -88,6 +97,8 @@
 </body>
 <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
 <script src="../../static/dep/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/data/address.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/home.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	 $(function () {
 		 //增加空tr
@@ -95,11 +106,11 @@
 			var str = '';
 			for (var i=0;i<14;i++) {
 				str += '<tr><td></td><td></td></tr>'
-			} 
+			}
 			$('.data_tbody').html(str)
 		 }
 		 mapTR()
-		 
+
 	 })
 </script>
 </html>

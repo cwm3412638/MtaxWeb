@@ -37,11 +37,11 @@
 			padding-top: 7%;
 		}
 		.card_user{
-			top: 33%;
+			top: 34%;
 			left: 5%;
 		}
 		.card_channel{
-			top: 48%;
+			top: 49%;
 			left: 5%;
 			background: rgba(76,36,135,0.7);
 		}
@@ -152,7 +152,7 @@
 	<div class="logo_text">
 		<img src="../static/img/1113.png" >
 	</div>
-	<h3 class="title">企业效能管理云应用渠道管理</h3>
+	<h3 class="title" style="font-size:1.6rem">企业效能管理云应用渠道管理</h3>
 	<div class="card">
 		<p>
 			现有渠道合计：<span class="channelSum"></span>
@@ -236,13 +236,13 @@
 		// 点击link头跳转相应页面
 		$('.btn_link').click(function(){
 			if($(this).index('.btn_link') == 0){
-				window.location.href = 'sub_page/channel_manage.html'
+                window.location.href = 'sub_page/channel_setting.html'
 			}else if($(this).index('.btn_link') == 1){
 				window.location.href = 'sub_page/user_manage.html'
 			}else if($(this).index('.btn_link') == 2){
 				window.location.href = 'sub_page/channel_search.html'
 			}else{
-				window.location.href = 'sub_page/channel_setting.html'
+                window.location.href = 'sub_page/channel_manage.html'
 			}
 		})
 		// 获取数据公共方法

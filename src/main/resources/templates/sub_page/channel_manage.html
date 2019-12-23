@@ -69,7 +69,7 @@
 				<th>租赁支付日期</th>
 			</thead>
 			<tbody class="data_tbody">
-				
+
 			</tbody>
 		</table>
 	</div>
@@ -80,18 +80,15 @@
 </div>
 </body>
 <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/js/common.js"></script>
 <script type="text/javascript">
 	 $(function () {
-		 //增加空tr
-		 function mapTR(){
-			var str = '';
-			for (var i=0;i<12;i++) {
-				str += '<tr><td></td><td></td><td></td></tr>'
-			} 
-			$('.data_tbody').html(str)
-		 }
-		 mapTR()
-		 
+		 mapTR('data_tbody',12);
+		 // 表格渲染
+		 $('.data_tbody').html(function(i,originTex){
+			 console.log(getData({url:'/canal/getCanalCountList',method:'get'}).data)
+			 return (originTex+i);
+		 })
 	 })
 </script>
 </html>
