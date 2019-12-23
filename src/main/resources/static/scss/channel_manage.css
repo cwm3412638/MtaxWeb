@@ -72,11 +72,21 @@
   width: 65%;
   display: inline-block;
   border-radius: 0; }
-.channel_setting .form_filter button {
-  width: 33%;
-  display: inline-block;
-  background: #EA9C1B;
-  border-color: #bbb; }
+.channel_setting .form_filter label {
+  min-width: 6rem;
+  padding: 0;
+  width: 6rem; }
+.channel_setting .form_filter .form-group > div:nth-child(1), .channel_setting .form_filter .citybox1 {
+  width: 38% !important; }
+.channel_setting .form_filter .form-group > .search_btn {
+  width: 20% !important;
+  float: right;
+  margin-top: 1rem; }
+  .channel_setting .form_filter .form-group > .search_btn button {
+    width: 100%;
+    display: inline-block;
+    background: #EA9C1B;
+    border-color: #bbb; }
 .channel_setting .addChannel {
   width: 100%;
   padding: 0 4%;
