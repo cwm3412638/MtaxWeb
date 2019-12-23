@@ -8,7 +8,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/*.html").addResourceLocations("classpath:/templates/");
+        registry.addResourceHandler("/**/*.html").addResourceLocations("classpath:/templates/");
 //		自定义静态资源映射,不需要额外接口
 //		registry.addResourceHandler(osProperties.getImageUri()).addResourceLocations(osProperties.getImagesPath());
     }
