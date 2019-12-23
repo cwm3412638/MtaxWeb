@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="156be222-af9c-44fc-a2e4-53dfea9f1b21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MtaxWeb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtax-web.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/LoginContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/LoginContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scss/channel_manage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/sub_page/channel_setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sub_page/channel_setting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/sub_page/user_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sub_page/user_manage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577103032032</updated>
-      <workItem from="1577103034833" duration="2784000" />
+      <workItem from="1577103034833" duration="3467000" />
     </task>
     <servers />
   </component>

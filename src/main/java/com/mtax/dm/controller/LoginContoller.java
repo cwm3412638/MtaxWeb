@@ -1,5 +1,6 @@
 package com.mtax.dm.controller;
 
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.mtax.dm.common.result.JsonResult;
 import com.mtax.dm.common.result.ResultCode;
 import com.mtax.dm.entity.SysUser;
@@ -7,6 +8,7 @@ import com.mtax.dm.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.catalina.webresources.JarResourceSet;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.ExcessiveAttemptsException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -89,6 +91,18 @@ public class LoginContoller {
         }
         subject.logout();
         return new JsonResult(true, ResultCode.SUCCESS);
+    }
+
+    @GetMapping("/list")
+    @ApiOperation(value = "用户列表", notes = "用户列表")
+    public JsonResult list(@RequestParam String canalId) {
+        if (canalId == null || canalId.equals("")) {
+            return new JsonResult(true, sysUserService.list());
+        } else {
+            return new JsonResult(true, sysUserService.list(Wrappers.<SysUser>query()
+                    .lambda()
+                    .eq(SysUser::getCanalId, canalId)));
+        }
     }
 
     @PostMapping("/addUser")
