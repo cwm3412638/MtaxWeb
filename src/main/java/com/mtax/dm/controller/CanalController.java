@@ -31,9 +31,9 @@ public class CanalController {
         return canalService.updateCanal(canal);
     }
 
-    @DeleteMapping("/delCanalById")
+    @DeleteMapping("/delCanalById/{id}")
     @ApiOperation(value = "根据id删除渠道信息", notes = "根据id删除渠道信息")
-    public JsonResult delCanalById(@ApiParam(name = "渠道id", value = "id", required = true)@RequestParam("id") String id){
+    public JsonResult delCanalById(@ApiParam(name = "渠道id", value = "id", required = true)@PathVariable String id){
         return canalService.delCanalById(id);
     }
 
