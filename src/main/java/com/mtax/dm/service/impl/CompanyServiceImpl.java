@@ -41,14 +41,14 @@ public class CompanyServiceImpl extends ServiceImpl<CompanyMapper, Company> impl
     }
 
     @Override
-    public JsonResult getCompanyBySearch(String companyName) {
-        return new JsonResult(true, ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Company>query().lambda().eq(Company::getName,companyName)));
+    public JsonResult getCompanyBySearch(String companyName,String start,String end) {
+        return new JsonResult(true, ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Company>query().lambda().eq(Company::getName,companyName).ge(Company::getCreateTime,start).le(Company::getCreateTime,end)));
     }
 
     @Override
-    public JsonResult getCompanyBysearchAndCanal() {
+    public JsonResult getCompanyBysearchAndCanal(String start,String end) {
         Subject subject = SecurityUtils.getSubject();
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
-        return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Company>query().lambda().eq(Company::getCanalId,loginUser.getCanalId())));
+        return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Company>query().lambda().eq(Company::getCanalId,loginUser.getCanalId()).ge(Company::getCreateTime,start).le(Company::getCreateTime,end)));
     }
 }

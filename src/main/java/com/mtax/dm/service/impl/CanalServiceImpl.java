@@ -80,11 +80,11 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
     }
 
     @Override
-    public JsonResult getCanalCountList() {
+    public JsonResult getCanalCountList(Canal canal) {
       AtomicReference<Integer> CompanyCount= new AtomicReference<>(0);
         AtomicReference<Integer> payCount= new AtomicReference<>(0);
         ArrayList<CanalVo> objects = Lists.newArrayList();
-        List<Canal> canals = baseMapper.selectList(Wrappers.query());
+        List<Canal> canals = baseMapper.selectList(Wrappers.<Canal>query().lambda().eq(Canal::getProvince,canal.getProvince()).eq(Canal::getArea,canal.getArea()).eq(Canal::getCity,canal.getCity()));
         canals.stream().forEach(item->{
             List<Company> companyListByCanalId = companyService.getCompanyListByCanalId(item.getId());
             CompanyCount.updateAndGet(v -> v + companyListByCanalId.size());

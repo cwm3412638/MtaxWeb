@@ -9,6 +9,6 @@ public interface CompanyService extends IService<Company> {
     JsonResult addCompany(Company company);
     List<Company> getCompanyListByCanalId(String canalId);
     Integer getCompanyPayCount(String canalId);
-    JsonResult getCompanyBySearch(String companyName);
-    JsonResult getCompanyBysearchAndCanal();
+    JsonResult getCompanyBySearch(String companyName,String start,String end);
+    JsonResult getCompanyBysearchAndCanal(String start,String end);
 }

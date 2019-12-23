@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="">
+    <list default="true" id="28552c6e-c365-4b9e-a893-34c990371a81" name="Default Changelist" comment="添加打包不破坏字体">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/channel_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/channel_setting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sub_page/user_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/CanalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/CanalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/CanalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/CanalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CanalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CanalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CompanyServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mtax.dm.entity.vo" />
       <recent name="com.mtax.dm.controller" />
       <recent name="com.mtax.dm.config" />
     </key>
@@ -177,7 +177,7 @@
       <workItem from="1576807794857" duration="11022000" />
       <workItem from="1576839929150" duration="324000" />
       <workItem from="1576840270997" duration="48406000" />
-      <workItem from="1577014849352" duration="3978000" />
+      <workItem from="1577014849352" duration="10074000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1576728429975</created>
@@ -277,7 +277,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577018848932</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加页面">
+      <created>1577019275833</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577019275833</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改静态页面访问资源">
+      <created>1577075230591</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1577075230591</updated>
+    </task>
+    <task id="LOCAL-00017" summary="添加打包不破坏字体">
+      <created>1577080312056</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1577080312056</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +327,9 @@
     <MESSAGE value="###" />
     <MESSAGE value="#####" />
     <MESSAGE value="添加页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加页面" />
+    <MESSAGE value="修改静态页面访问资源" />
+    <MESSAGE value="添加打包不破坏字体" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加打包不破坏字体" />
   </component>
   <component name="WindowStateProjectService">
     <state x="871" y="176" key="#Deployment" />
@@ -358,12 +381,6 @@
           <url>jar://$MAVEN_REPOSITORY$/cn/afterturn/easypoi-base/4.1.0/easypoi-base-4.1.0-sources.jar!/cn/afterturn/easypoi/cache/WordCache.java</url>
           <line>36</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mtax/dm/service/impl/CanalServiceImpl.java</url>
-          <line>82</line>
-          <properties class="com.mtax.dm.service.impl.CanalServiceImpl" method="getCanalCountList" />
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

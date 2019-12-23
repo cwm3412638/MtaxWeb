@@ -26,12 +26,12 @@ public class CompanyController {
 
     @GetMapping("/getCompanyBySearch")
     @ApiOperation(value = "条件查询所有公司信息", notes = "条件查询所有公司信息")
-    public JsonResult getCompanyBySearch(@ApiParam(value = "companyName", name = "公司名称", required = false) @RequestParam(required = false) String companyName) {
-        return companyService.getCompanyBySearch(companyName);
+    public JsonResult getCompanyBySearch(@ApiParam(value = "companyName", name = "公司名称", required = false) @RequestParam(required = false) String companyName,@RequestParam(required = false) String start,@RequestParam(required = false) String end) {
+        return companyService.getCompanyBySearch(companyName,start,end);
     }
     @GetMapping("/getCompanyBysearchAndCanal")
     @ApiOperation(value = "渠道后台登录条件查询", notes = "渠道后台登录条件查询")
-    public JsonResult getCompanyBysearchAndCanal(){
-        return companyService.getCompanyBysearchAndCanal();
+    public JsonResult getCompanyBysearchAndCanal(@RequestParam(required = false) String start,@RequestParam(required = false) String end){
+        return companyService.getCompanyBysearchAndCanal(start,end);
     }
 }

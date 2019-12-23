@@ -48,8 +48,8 @@ public class CanalController {
     }
     @GetMapping("/getCanalCountList")
     @ApiOperation(value = "查询所有渠道信息和渠道下的企业数", notes = "查询所有渠道信息")
-    public JsonResult getCanalCountList(){
-        return canalService.getCanalCountList();
+    public JsonResult getCanalCountList(@RequestBody Canal canal){
+        return canalService.getCanalCountList(canal);
     }
 
 }
