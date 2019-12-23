@@ -31,28 +31,28 @@ public class CanalController {
         return canalService.updateCanal(canal);
     }
 
-    @DeleteMapping("/delCanalById/{id}")
+    @DeleteMapping("/delCanalById")
     @ApiOperation(value = "根据id删除渠道信息", notes = "根据id删除渠道信息")
-    public JsonResult delCanalById(@PathVariable String id) {
+    public JsonResult delCanalById(@ApiParam(name = "渠道id", value = "id", required = true)@RequestParam("id") String id){
         return canalService.delCanalById(id);
     }
 
     @GetMapping("/getAllCount")
     @ApiOperation(value = "查询所有渠道总数", notes = "查询所有渠道总数")
-    public JsonResult getAllCount() {
-        return canalService.getAllCount();
+    public JsonResult getAllCount(){
+          return canalService.getAllCount();
     }
 
     @GetMapping("/getCanalList")
     @ApiOperation(value = "查询所有渠道信息", notes = "查询所有渠道信息")
-    public JsonResult getCanalList(@RequestParam String province, @RequestParam String city) {
-        return canalService.getCanalList(province, city);
+    public JsonResult getCanalList(@RequestParam String province,@RequestParam String city){
+        return canalService.getCanalList(province,city);
     }
 
     @GetMapping("/getCanalCountList")
     @ApiOperation(value = "查询所有渠道信息和渠道下的企业数", notes = "查询所有渠道信息")
-    public JsonResult getCanalCountList(@RequestParam String province, @RequestParam String city) {
-        return canalService.getCanalCountList(province, city);
+    public JsonResult getCanalCountList(@RequestParam String province,@RequestParam String city){
+        return canalService.getCanalCountList(province,city);
     }
 
 }
