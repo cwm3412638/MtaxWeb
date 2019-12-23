@@ -75,8 +75,8 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
     }
 
     @Override
-    public JsonResult getCanalList() {
-        return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.query()));
+    public JsonResult getCanalList(Canal canal) {
+        return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Canal>query().lambda().eq(Canal::getProvince,canal.getProvince()).eq(Canal::getCity,canal.getCity()).eq(Canal::getArea,canal.getArea())));
     }
 
     @Override

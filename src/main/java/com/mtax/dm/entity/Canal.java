@@ -26,6 +26,12 @@ public class Canal {
     private String id;
     @ApiModelProperty(value ="渠道名称")
     private String name;
+    @ApiModelProperty(value ="省")
+    private String province;
+    @ApiModelProperty(value ="市")
+    private String city;
+    @ApiModelProperty(value ="区")
+    private String area;
     @ApiModelProperty(value ="创建时间")
     private Timestamp createTime;
     @ApiModelProperty(value ="创建人")
