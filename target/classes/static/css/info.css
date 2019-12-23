@@ -1,0 +1,55 @@
+div{color: white;}
+.logo{
+	top: 2%;
+	left: 5%;
+	width: 10%;
+}
+.logo_text{
+	top: 3.5%;
+	left: 15%;
+	width: 30%;
+}
+.back{
+	top: 3%;
+	right: 3%;
+	color: #fff;
+}
+.logo_title{
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	top: 7%;
+}
+.logo_title h3{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2rem;
+}
+.info_text{
+	width: 90%;
+	top: 15%;
+	left: 5%;
+	border: 1px solid #ccc;
+	background: rgba(63,48,161,0.7);
+	z-index: 10;
+	padding: 5% 2% 0 2%;
+}
+.info_text p{
+	text-indent:2rem;
+	font-size: 1.4rem;
+}
+.info_text .title{
+	text-indent:0;
+	color: #EA9C1B;
+	font-size: 1.6rem;
+}
+ul{margin-bottom: 0;}
+.info_text ul li{
+	margin-bottom: 0.5rem;
+}
+.info_text ul li .glyphicon{
+	color: #EA9C1B;
+}
+.jietu{
+	position: relative;
+}

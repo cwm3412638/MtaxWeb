@@ -43,8 +43,8 @@ public class CanalController {
     }
     @GetMapping("/getCanalList")
     @ApiOperation(value = "查询所有渠道信息", notes = "查询所有渠道信息")
-    public JsonResult getCanalList(@RequestBody(required = false) Canal canal){
-        return canalService.getCanalList(canal);
+    public JsonResult getCanalList(@RequestParam String province,@RequestParam String city){
+        return canalService.getCanalList(province,city);
     }
     @GetMapping("/getCanalCountList")
     @ApiOperation(value = "查询所有渠道信息和渠道下的企业数", notes = "查询所有渠道信息")
