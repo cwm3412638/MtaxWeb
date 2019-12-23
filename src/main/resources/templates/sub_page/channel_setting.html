@@ -99,6 +99,7 @@
 <script src="../../static/dep/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../../static/data/address.js" type="text/javascript" charset="utf-8"></script>
 <script src="../../static/js/home.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	 $(function () {
 		 //增加空tr
@@ -110,7 +111,15 @@
 			$('.data_tbody').html(str)
 		 }
 		 mapTR()
-
+		 // getData({url:'/canal/getCanalList',method:'get'})
+		 $.ajax({
+			 url:'/canal/getCanalCountList',
+			 method:'get',
+			 dataType:'json',
+			 success:function (data) {
+				 console.log(data)
+			 }
+		 })
 	 })
 </script>
 </html>
