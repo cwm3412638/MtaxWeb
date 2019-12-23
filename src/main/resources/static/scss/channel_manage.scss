@@ -134,6 +134,19 @@
 		}
 	}
 }
+.user_manage{
+	.addChannel{
+		width: 100%;
+		padding: 0 4%;
+		top: 25%;
+		button{
+			padding: 2% 15%;
+			background: #3f3597;
+			border: 1px solid #bbb;
+			border-radius: 3px;
+		}
+	}
+}
 .channel_single{
 	.table_title{
 		top:15%

@@ -111,15 +111,7 @@
 			$('.data_tbody').html(str)
 		 }
 		 mapTR()
-		 // getData({url:'/canal/getCanalList',method:'get'})
-		 $.ajax({
-			 url:'/canal/getCanalCountList',
-			 method:'get',
-			 dataType:'json',
-			 success:function (data) {
-				 console.log(data)
-			 }
-		 })
+		 getData({url:'/canal/getCanalList',method:'get'})
 	 })
 </script>
 </html>
