@@ -30,6 +30,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements CanalService {
     @Autowired
     private CompanyService companyService;
+
     @Override
     public JsonResult addCanal(Canal canal) {
         //生成id
@@ -38,10 +39,10 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
         canal.setCreateBy(loginUser.getId());
         int insert = baseMapper.insert(canal);
-        if (insert==1){
+        if (insert == 1) {
             return new JsonResult(true, ResultCode.SUCCESS);
-        }else {
-            return new JsonResult(false,ResultCode.COMMON_FAIL);
+        } else {
+            return new JsonResult(false, ResultCode.COMMON_FAIL);
         }
     }
 
@@ -52,40 +53,57 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
         canal.setUpdateBy(loginUser.getId());
         canal.setUpdateTime(new Date());
         int i = baseMapper.updateById(canal);
-        if (i==1){
-            return new JsonResult(true,ResultCode.SUCCESS);
-        }else {
-            return new JsonResult(false,ResultCode.COMMON_FAIL);
+        if (i == 1) {
+            return new JsonResult(true, ResultCode.SUCCESS);
+        } else {
+            return new JsonResult(false, ResultCode.COMMON_FAIL);
         }
     }
 
     @Override
     public JsonResult delCanalById(String id) {
         int i = baseMapper.deleteById(id);
-        if (i==1){
-            return new JsonResult(true,ResultCode.SUCCESS);
-        }else {
-            return new JsonResult(false,ResultCode.COMMON_FAIL);
+        if (i == 1) {
+            return new JsonResult(true, ResultCode.SUCCESS);
+        } else {
+            return new JsonResult(false, ResultCode.COMMON_FAIL);
         }
     }
 
     @Override
     public JsonResult getAllCount() {
-        return new JsonResult<>(true,ResultCode.SUCCESS,baseMapper.selectCount(Wrappers.query()));
+        return new JsonResult<>(true, ResultCode.SUCCESS, baseMapper.selectCount(Wrappers.query()));
     }
 
     @Override
-    public JsonResult getCanalList(Canal canal) {
-        return new JsonResult(true,ResultCode.SUCCESS,baseMapper.selectList(Wrappers.<Canal>query().lambda().eq(Canal::getProvince,canal.getProvince()).eq(Canal::getCity,canal.getCity()).eq(Canal::getArea,canal.getArea())));
+    public JsonResult getCanalList(String province, String city) {
+        if (null == province || null == city || province.equals("") || city.equals("")) {
+            return new JsonResult(true, ResultCode.SUCCESS, this.list());
+        }
+        if (null != province) {
+            if (null == city) {
+                List<Canal> c1 = this.list(Wrappers.<Canal>query()
+                        .lambda()
+                        .eq(Canal::getProvince, province));
+                return new JsonResult(true, ResultCode.SUCCESS, c1);
+            }
+            List<Canal> c2 = this.list(Wrappers.<Canal>query()
+                    .lambda()
+                    .eq(Canal::getProvince, province)
+                    .eq(Canal::getCity, city)
+            );
+            return new JsonResult(true, ResultCode.SUCCESS, c2);
+        }
+        return null;
     }
 
     @Override
     public JsonResult getCanalCountList(Canal canal) {
-      AtomicReference<Integer> CompanyCount= new AtomicReference<>(0);
-        AtomicReference<Integer> payCount= new AtomicReference<>(0);
+        AtomicReference<Integer> CompanyCount = new AtomicReference<>(0);
+        AtomicReference<Integer> payCount = new AtomicReference<>(0);
         ArrayList<CanalVo> objects = Lists.newArrayList();
-        List<Canal> canals = baseMapper.selectList(Wrappers.<Canal>query().lambda().eq(Canal::getProvince,canal.getProvince()).eq(Canal::getArea,canal.getArea()).eq(Canal::getCity,canal.getCity()));
-        canals.stream().forEach(item->{
+        List<Canal> canals = baseMapper.selectList(Wrappers.<Canal>query().lambda().eq(Canal::getProvince, canal.getProvince()).eq(Canal::getArea, canal.getArea()).eq(Canal::getCity, canal.getCity()));
+        canals.stream().forEach(item -> {
             List<Company> companyListByCanalId = companyService.getCompanyListByCanalId(item.getId());
             CompanyCount.updateAndGet(v -> v + companyListByCanalId.size());
             Integer companyPayCount = companyService.getCompanyPayCount(item.getId());
@@ -101,6 +119,6 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
         statisticsVo.setCount(CompanyCount.get());
         statisticsVo.setPayCount(payCount.get());
 
-        return new JsonResult(true,ResultCode.SUCCESS,statisticsVo);
+        return new JsonResult(true, ResultCode.SUCCESS, statisticsVo);
     }
 }

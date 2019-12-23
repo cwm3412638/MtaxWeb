@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="referrer" content="never">
     <title>首页</title>
-    <link rel="stylesheet" href="../../static/css/common.css" />
-    <link rel="stylesheet" href="../../static/dep/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../static/scss/channel_manage.css" />
+    <link rel="stylesheet" href="../static/css/common.css" />
+    <link rel="stylesheet" href="../static/dep/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/scss/channel_manage.css" />
 	<style type="text/css">
 		.logo{
 			top: 2%;
@@ -29,15 +30,16 @@
 		}
 	</style>
 </head>
-<body class="channel_search">
-    <img class="img_bg" src="../../static/img/bg.jpg"/>
+<body class="channel_single">
+    <img class="img_bg" src="../static/img/bg.jpg"/>
 	<div class="logo">
-		<img src="../../static/img/31111.png" >
+		<img src="../static/img/31111.png" >
 	</div>
 	<div class="logo_text">
-		<img src="../../static/img/1113.png" >
+		<img src="../static/img/1113.png" >
 	</div>
 	<h3 class="title">企业效能管理云应用渠道管理</h3>
+	<div class="table_title">合作机构名称：</div>
 	<div class="form_filter">
 		<div class="form-group">
 		  <label for="username" class="col-sm-3 control-label">选择数据查询区间:</label>
@@ -55,12 +57,12 @@
 	<div class="data_table">
 		<table>
 			<thead>
-				<th>合作渠道名称</th>
-				<th>填表企业数</th>
-				<th>支付成功数</th>
+				<th>企业名称</th>
+				<th>填表日期</th>
+				<th>租赁支付日期</th>
 			</thead>
 			<tbody class="data_tbody">
-
+				
 			</tbody>
 		</table>
 	</div>
@@ -68,17 +70,21 @@
 		填表用户合计数：<span></span>
 		支付用户合计数：<span></span>
 	</div>
+</div>
 </body>
-<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
-<script type="text/javascript" src="../../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
 <script type="text/javascript">
-	$(function () {
-		mapTR('data_tbody',14);
-		// 表格渲染
-		$('.data_tbody').html(function(i,originTex){
-			console.log(getData({url:'/canal/getCanalList',method:'get',data:{province:"",city:""}}).data)
-			return (originTex+i);
-		})
-	})
+	 $(function () {
+		 //增加空tr
+		 function mapTR(){
+			var str = '';
+			for (var i=0;i<12;i++) {
+				str += '<tr><td></td><td></td><td></td></tr>'
+			} 
+			$('.data_tbody').html(str)
+		 }
+		 mapTR()
+		 
+	 })
 </script>
 </html>

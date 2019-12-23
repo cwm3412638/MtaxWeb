@@ -9,6 +9,6 @@ public interface CanalService extends IService<Canal> {
     JsonResult updateCanal(Canal canal);
     JsonResult delCanalById(String id);
     JsonResult getAllCount();
-    JsonResult getCanalList(Canal canal);
+    JsonResult getCanalList(String provice,String city);
     JsonResult getCanalCountList(Canal canal);
 }

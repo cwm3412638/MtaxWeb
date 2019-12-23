@@ -1,0 +1,66 @@
+div{color: white;}
+.logo{
+	top: 8%;
+	left: 11%;
+	width: 14%;
+}
+.logo_text{
+	top: 11%;
+	left: 25%;
+	width: 32%;
+}
+.back{
+	top: 3%;
+	right: 3%;
+	color: #fff;
+}
+.logo_title{
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	top: 7%;
+}
+.login_form{
+	width: 90%;
+    top: 18%;
+	left: 5%;
+	border: 1px solid #ccc;
+	background: rgba(63,48,161,0.7);
+	z-index: 10;
+	padding: 5% 4%;
+}
+.login_form h3{
+	margin: 0;
+	font-size: 2.2rem;
+	text-align: center;
+}
+form{
+	padding: 10% 0;
+}
+.form-group{
+	position: relative;
+}
+.form-group>label{
+	display: inline-block;
+	width: 7rem;
+}
+.form-group>div{
+	display: inline-block;
+	width: 71%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.form-control{
+	border-radius: 0!important;
+}
+.longin_btn{text-align: right;}
+.longin_btn input{
+	width: 25%;
+	float: right;
+	border-radius: 3px!important;
+	background: #b6b8ec;
+	color: #000;display: block;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+	border: none;
+}
