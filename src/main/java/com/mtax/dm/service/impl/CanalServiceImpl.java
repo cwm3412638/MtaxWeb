@@ -34,7 +34,7 @@ public class CanalServiceImpl extends ServiceImpl<CanalMapper, Canal> implements
     @Override
     public JsonResult addCanal(Canal canal) {
         //生成id
-        canal.setId(IdUtils.getId());
+        canal.setId(IdUtils.getUUID());
         Subject subject = SecurityUtils.getSubject();
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
         canal.setCreateBy(loginUser.getId());

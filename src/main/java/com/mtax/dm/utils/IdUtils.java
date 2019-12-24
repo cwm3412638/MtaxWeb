@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
+import java.util.UUID;
 import java.util.stream.Stream;
 
 public class IdUtils {
@@ -14,12 +15,22 @@ public class IdUtils {
      *
      * @return
      */
+
+
+    public static String getUUID() {
+        UUID uuid = UUID.randomUUID();
+        String str = uuid.toString();
+        String uuidStr = str.replace("-", "");
+        return uuidStr;
+
+    }
+
     public static String getId() {
         //获取当前时间戳
         String str = String.valueOf(System.currentTimeMillis());
         ArrayList<String> list = Lists.newArrayList();
         //将时间戳放入到List中
-        Stream.of(str.toCharArray()).forEach(item->{
+        Stream.of(str.toCharArray()).forEach(item -> {
             list.add(item.toString());
         });
         //随机打乱

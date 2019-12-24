@@ -21,7 +21,7 @@ import java.util.List;
 public class CompanyServiceImpl extends ServiceImpl<CompanyMapper, Company> implements CompanyService {
     @Override
     public JsonResult addCompany(Company company) {
-        company.setId(IdUtils.getId());
+        company.setId(IdUtils.getUUID());
         int insert = baseMapper.insert(company);
         if (insert==1){
             return new JsonResult(true);

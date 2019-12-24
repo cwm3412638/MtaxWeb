@@ -35,7 +35,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public JsonResult addSysUser(SysUser sysUser) {
         Subject subject = SecurityUtils.getSubject();
         SysUser loginUser = (SysUser) subject.getSession().getAttribute("loginUser");
-        sysUser.setId(IdUtils.getId());
+        sysUser.setId(IdUtils.getUUID());
         sysUser.setPassWord(new SimpleHash("md5", sysUser.getPassWord(), ByteSource.Util.bytes(sysUser.getUserName()), 2).toHex());
         sysUser.setCreateTime(new Date());
         sysUser.setCreateBy(loginUser.getId());
